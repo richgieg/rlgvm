@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include "cpu.h"
 
-struct cpu * newcpu()
+struct cpu * newcpu(struct mem *mem)
 {
     struct cpu *cpu = malloc(sizeof(struct cpu));
+    cpu->mem = mem;
     cpu->eax = 0;
     cpu->ebx = 0;
     cpu->ecx = 0;
