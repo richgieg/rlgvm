@@ -20,3 +20,13 @@ void printmem(struct mem *mem)
 {
     printf("memory size (bytes): %u\n", mem->size);
 }
+
+char getbyte(struct mem *mem, unsigned int address)
+{
+    return mem->bytes[address];
+}
+
+void setbyte(struct mem *mem, unsigned int address, char byte)
+{
+    mem->bytes[address] = byte;
+}
