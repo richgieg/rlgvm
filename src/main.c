@@ -1,6 +1,6 @@
 #include "vm/vm.h"
 
-const unsigned int MEM_SIZE = 1024 * 1024 * 256; // 16 MB
+const unsigned int MEM_SIZE = 1024 * 1024 * 16; // 16 MB
 
 int main()
 {
